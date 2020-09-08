@@ -1,16 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
 
+function Navigation() {
+  return <div className="navigation bg-white">nav</div>;
+}
+
+function Main() {
+  return <div className="main bg-gray-200 flex-grow">main</div>;
+}
+
 const Home: React.FC<{}> = () => (
-  <div className="container m-1">
+  <div className="flex flex-row">
     <Head>
       <title>My digital garden</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <nav>nav</nav>
+    <Navigation />
 
-    <main>main</main>
+    <Main />
   </div>
 );
 
